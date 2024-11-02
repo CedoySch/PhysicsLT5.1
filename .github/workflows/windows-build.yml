@@ -10,11 +10,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    # Шаг 2: Устанавливаем Python
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'
+        python-version: '3.11'  # Use Python 3.11 for compatibility
 
     - name: Install dependencies
       run: |
